@@ -1,0 +1,444 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: black;
+}
+.App {
+  position: absolute;
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  height: 100%;
+}
+.Menu {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 15%;
+  height: 100%;
+  min-width: 100px;
+}
+
+.Dynamic {
+  position: relative;
+  left: 15%;
+  width: 83%;
+  margin-bottom: 4.7%;
+  padding: 10px;
+}
+
+.Header h2{
+  padding: 5px;
+  margin: 5px;
+  margin-left: 25px;
+  font-weight: bold;
+}
+.Header i{
+  font-size: 40px;
+}
+.ListScreens ul{
+  list-style: none;
+}
+.ListScreens h3{
+  font-weight: normal;
+}
+.ListScreens i {
+  margin-right: 12px;
+}
+hr.solid {
+  border-top: 3px solid #bbb;
+  margin-right: 20%;
+  margin-left: 10%;
+}
+
+.HomePage{
+  background-color: #121212;
+}
+
+.ChannelList{
+  color: rgba(255, 255, 255, 0.5);
+  margin: 15px;
+  margin-left: 0px;
+}
+
+.ChannelList:hover{
+  color: #1CB955;
+}
+
+.ContainerRecent{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.ContainerAlbums{
+  padding: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  /* padding-bottom: 100px; */
+}
+.Bottom {
+  height: 100px;
+}
+.NavigationBar {
+  height: 7%;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(28,185,85);
+  background: linear-gradient(180deg, rgba(28,185,85,1) 0%, rgba(26,103,54,1) 100%); 
+}
+.NavigationBar h2 {
+  padding-right: 30px;
+}
+
+
+.Arrow {
+  position: fixed;
+  top: 3%;
+  left: 18%;;
+  font-size: 30px;
+}
+
+.HorizontalCard{
+  border-radius: 10px;
+  background-color: #312950;
+  width: 30%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.HorizontalCard i{
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0);
+  margin-top: 7%;
+  margin-right: 3%;
+  animation-iteration-count: infinite;
+  animation-name: hoverIcon;
+  animation-duration: 1s
+}
+.HorizontalCard i:hover{
+  color:#1CB955
+}
+
+.HorizontalCard img {
+  border-radius: 10px;
+  width: 70px;
+  height: 70px
+}
+
+.HorizontalCard h3 {
+  display: flex;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+          line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.image{
+  justify-content: space-around;
+  display: flex;
+}
+.title{
+  display: inline-flex;
+  margin-left: 18px;
+  margin-right: 10px;
+}
+
+.Cards{
+  display: flex;
+  padding: 8px;
+  justify-content: space-between;
+}
+
+.AlbumCard {
+  border-radius: 15px;
+  background-color: #000;
+  text-align: center;
+  width: 160px;
+  height: 270px;
+  padding: 15px;
+  margin: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+          line-clamp: 1; 
+  -webkit-box-orient: vertical;
+}
+.AlbumCard:hover{
+  background-color:#282828
+}
+.AlbumCard img{
+  border-radius: 8px;
+  align-self: center;
+  height: 160px;
+}
+.AlbumCard h3{
+  font-size: 15px;
+  margin: 0p;
+}
+.AlbumCard h4{
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.AlbumCard i {
+  position: absolute;
+  margin-top: 9%;
+  margin-left: 3%;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0);
+}
+.AlbumCard:hover{
+  color: #1CB955;
+}
+.AlbumCard i:hover{
+  color: #1CB955;
+}
+.AlbumsCards{
+  display: flex;
+  justify-content: space-between;
+}
+
+.TitleAlbums{
+  display: flex;
+  justify-content: space-between;
+}
+
+.PlayerFooter{
+  position: fixed;
+  top: 89%;
+  height: 11%;
+  background-color: #181818;
+  width: 100%;
+}
+
+.InfoAlbum{
+  position: fixed;
+  top: 88%;
+  margin: 5px;
+  width:35%;
+  height:100%;
+}
+.Icon i{
+  margin-top: 70%;
+  font-size: 30px;
+}
+.InfoAlbum h3 {
+  margin: 3px;
+}
+.InfoAlbum h4 {
+  margin-left: 3px;
+  margin-top: 5px;
+  font-weight: normal;
+}
+.Info {
+  margin-left: 10px;
+  width: 67%;
+  position: fixed;
+  left: 6%;
+  top: 91%;
+}
+.AlbumPhoto{
+  position: fixed;
+  left: 1%;
+  top: 90%;
+  
+}
+.AlbumPhoto i{
+  font-size: 60px;
+  margin: 0px;
+}
+.AlbumPhoto img {
+  width: 70px;
+  height: 70%;
+  border-radius: 5px;
+}
+
+.Player{
+  margin: 5px;
+  position: fixed;
+  left: 35%;
+  width:65%;
+  height:100%;
+  justify-content: center;
+}
+.Player i{
+  color: #fff;
+  font-size: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.Figure{
+  width: 100%;
+  margin: 5px;
+  display: inline-block;
+  align-self: center;
+}
+.Audio{
+  color: green;
+  margin-top: 2%;
+  opacity: 1;
+  width: 95%;
+  background-color: #181818;
+  accent-color: #1CB955;
+  color-scheme: #1CB955;
+  color-interpolation-filters: #1CB955;
+}
+
+.Settings i{
+  font-size: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.ChannelPage {
+  background: rgb(26,103,54);
+  background: linear-gradient(180deg, rgba(26,103,54,1) 0%, rgba(24,24,24,1) 30%); 
+}
+.BannerChannel{
+  padding-top: 42px;
+  height: 230px;
+  padding: 0px;
+}
+.InfoChannel{
+  display: inline-block;
+  margin-top: 0px;
+  padding-top: 0px;
+  width: 70%;
+}
+.InfoChannel ul{
+  list-style: none;
+}
+.InfoChannel h1 {
+  margin: 0px;
+  font-size: 70px;
+  overflow: hidden;
+  text-overflow: "...";
+  white-space: nowrap;
+  width: 100%;
+  
+}
+.InfoChannel h2 {
+  margin: 0px;
+  font-size: 16px;
+}
+.InfoChannel h3 {
+  margin: 0px;
+}
+.InfoChannel h4 {
+  opacity: 0.7;
+  margin: 0px;
+  text-overflow: ellipsis;
+  -webkit-line-clamp:4; /* number of lines to show */
+  line-clamp: 4; 
+  overflow: hidden;
+}
+.PhotoAlbum{
+  margin-left: 30px;
+  font-size: 215px;
+  width: 17%;
+  display: inline-flex;
+}
+.PhotoAlbum img{
+  border-radius: 15px;
+  width: 100%;
+  box-shadow: 10px 20px 20px 10px rgba(0, 0, 0, 0.2);
+}
+.PlayList{
+  display: inline-grid;
+}
+.ButtonChannel{
+  padding-top: 5%;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.Button{
+  display: inline-block;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+}
+.ButtonChannel #PlayButton{
+  font-size: 50px;
+  display: inline-block;
+  color: #1BD760;
+}
+.ButtonChannel #LikeButton{
+  font-size: 35px;
+  display: inline-block;
+  opacity: 0.7;
+  align-self: center;
+}
+.ButtonChannel #OptionsButton{
+  font-size: 50px;
+  display: inline-block;
+  opacity: 0.7;
+  align-self: center;
+}
+.TablePlayList {
+  background-color: #121212;
+}
+.TablePlayList th{
+  text-align: left;
+}
+.TableCount{
+  width: 3%;
+  text-align: center;
+}
+.Center{
+  text-align: center;
+}
+.Left{
+  text-align: left;
+}
+.TableTitle{
+  width: 49%;
+  padding-left: 20px;
+}
+.TableAlbum{
+  width: 25%;
+}
+.TableAggregate{
+  width: 20%;
+}
+.TableDuration{
+  width: 15%;
+}
+.TitleSong{
+  width: 100%;
+
+}
+.ImageSong{
+  display: inline-block;
+  font-size: 45px;
+  padding-left: 20px;
+}
+.ImageSong img{
+  font-size: 12px;
+  width: 65px;
+  height: 65px;
+}
+.InfoSong{
+  display: inline-block;
+  padding-left: 20px;
+  max-width: 75%;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.InfoSong h3{
+  font-size: 16px;
+  margin: 0px;
+}
+.InfoSong h4{
+  font-size: 14px;
+  margin: 0px;
+  font-weight: normal;
+  opacity: 0.7;
+}
+.Row:hover{
+  background-color: #282828;
+}
