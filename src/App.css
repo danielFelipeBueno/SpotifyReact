@@ -334,8 +334,8 @@ hr.solid {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-   -webkit-line-clamp: 4; /* number of lines to show */
-          line-clamp: 4;
+   -webkit-line-clamp: 5; /* number of lines to show */
+          line-clamp: 5;
   -webkit-box-orient: vertical;}
 .PhotoAlbum{
   margin-top: 0px;
@@ -373,6 +373,9 @@ hr.solid {
   display: inline-block;
   opacity: 0.7;
   align-self: center;
+}
+#LikeButton:hover{
+  color: #1BD760;
 }
 .ButtonChannel #OptionsButton{
   font-size: 50px;

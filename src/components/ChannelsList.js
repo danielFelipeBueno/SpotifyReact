@@ -1,8 +1,6 @@
 import React from 'react';
 import '../App.css';
 export default function ChannelsList(props){
-    console.log('ChannelsList')
-    console.log(props)
     return (
         <><ul>
             {props.channels.map( channel => (

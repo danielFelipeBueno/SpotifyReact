@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css'
 import { HomePage } from '../modules/HomePage';
-import ChannelPage from './ChannelPage';
+import ChannelPage from '../modules/ChannelPage';
 
 export const Dynamic = ({isHome, setIsHome, setCurrentClip,setSelected,selected}) =>{
 

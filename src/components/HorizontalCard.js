@@ -4,13 +4,14 @@ export const HorizontalCard = ({ channel, setIsHome, setSelected }) =>{
     var urls = channel.urls;
     var logo = Object.values(urls);
     logo = logo[1].original
-    console.log(logo)
     return (
         <div className="HorizontalCard">
             <a href
             style={{cursor:'pointer'}}
             onClick={()=> {
+                //* set var state isHome / change page
                 setIsHome('channel')
+                //* set var state with selected id for request
                 setSelected(channel)
             }}>
                 <div className="image">

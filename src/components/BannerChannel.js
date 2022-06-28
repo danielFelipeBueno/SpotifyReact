@@ -1,8 +1,6 @@
 import React from 'react';
 import '../App.css'
 export default function BannerChannel({channel}){
-    console.log('Banner');
-    console.log(channel['urls']['logo_image']);
     const logo = channel['urls']['logo_image'].original;
     const banner = channel['urls']['banner_image'].original;
     return (

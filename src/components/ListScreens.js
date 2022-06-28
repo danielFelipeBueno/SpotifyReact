@@ -3,8 +3,6 @@ import '../App.css';
 import { useChannels } from '../hooks/useChannels';
 export default function ListScreens({setIsHome, setSelected, isHome}){
     const { channels } = useChannels(0,10);
-    console.log('MENU');
-    console.log(isHome);
     return (
         <div className="ListScreens">
             <ul>
@@ -13,6 +11,7 @@ export default function ListScreens({setIsHome, setSelected, isHome}){
                         <a href
                         style={{cursor:'pointer'}}
                         onClick={()=>
+                            //* set var state isHome / change page
                             setIsHome('home')
                         }>
                             <i class="fa-solid fa-house"></i>Home
@@ -29,9 +28,10 @@ export default function ListScreens({setIsHome, setSelected, isHome}){
                         <a href
                         style={{cursor:'pointer'}}
                         onClick={()=> {
-                            setIsHome('home')
-                            setSelected(channel)
+                            //* set var state isHome / change page
                             setIsHome('channel')
+                            //* set var state with selected id for request
+                            setSelected(channel)
                         }}>
                             {channel.title}
                         </a>

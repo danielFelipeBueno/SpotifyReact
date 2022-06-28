@@ -2,8 +2,6 @@ import React from 'react';
 import '../App.css'
 import TitleSong from './TitleSong';
 export default function RowTable({clip, index, setCurrentClip}){
-    console.log('Clip')
-    console.log(clip['urls']);
     let minutes = clip['duration'];
     let seconds = minutes%60;
     seconds = Math.trunc(seconds)

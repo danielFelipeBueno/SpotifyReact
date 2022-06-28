@@ -10,7 +10,9 @@ export const AlbumCard =({channel, setIsHome, setSelected})=>{
             <a href
             style={{cursor:'pointer'}}
             onClick={()=>{
+                //* set var state isHome / change page
                 setIsHome('channel')
+                //* set var state with selected id for request
                 setSelected(channel)
             }}>
             <i class="fa-solid fa-circle-play"></i>

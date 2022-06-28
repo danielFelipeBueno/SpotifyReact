@@ -14,8 +14,8 @@ export default function TitleSong({image,title, author,clip,setCurrentClip}){
             <a href
             style={{cursor:'pointer'}}
             onClick={()=>{
+                //* set var state currentClip for it player
                 setCurrentClip(props)
-                console.log('CLICK CLIP')
             }}>
                 <div className='ImageSong'>
                     {image === undefined 
