@@ -7,7 +7,6 @@ export default function BannerChannel({channel}){
     const banner = channel['urls']['banner_image'].original;
     return (
         <div className="BannerChannel">
-            <imag src={banner}>
                 <div className="PhotoAlbum">
                     <img src = { logo }
                     alt={channel['id']}/>
@@ -21,11 +20,10 @@ export default function BannerChannel({channel}){
                             <h1>{channel['title']}</h1>
                         </li>
                         <li>
-                            <h4>{ channel['description'] }</h4>
+                            <h4 >{ channel['description'] }</h4>
                         </li>
                     </ul>
                 </div>
-            </imag>
         </div>
     )
 }

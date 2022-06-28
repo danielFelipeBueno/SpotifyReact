@@ -17,7 +17,8 @@ export default function App() {
     <div className="App">
       <Menu 
       setIsHome={setIsHome}
-      setSelected={setSelected}/>
+      setSelected={setSelected}
+      isHome={isHome}/>
       <Dynamic 
       isHome={isHome} 
       setIsHome={setIsHome} 

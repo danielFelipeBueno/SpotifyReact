@@ -1,10 +1,10 @@
 import React from 'react';
 import '../App.css';
 import { useChannels } from '../hooks/useChannels';
-export default function ListScreens({setIsHome, setSelected}){
+export default function ListScreens({setIsHome, setSelected, isHome}){
     const { channels } = useChannels(0,10);
     console.log('MENU');
-    console.log(channels);
+    console.log(isHome);
     return (
         <div className="ListScreens">
             <ul>
@@ -22,14 +22,16 @@ export default function ListScreens({setIsHome, setSelected}){
                 
             </ul>
             <hr class="solid"></hr>
-            <ul>
+            {isHome === 'home'
+            ?<ul>
                 {channels.map( channel => (
                     <li className="ChannelList">
                         <a href
                         style={{cursor:'pointer'}}
                         onClick={()=> {
-                            setIsHome('channel')
+                            setIsHome('home')
                             setSelected(channel)
+                            setIsHome('channel')
                         }}>
                             {channel.title}
                         </a>
@@ -37,6 +39,7 @@ export default function ListScreens({setIsHome, setSelected}){
                     </li>
                 ))}
             </ul>
+            :null}
         </div>
     )
 }

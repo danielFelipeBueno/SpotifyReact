@@ -7,7 +7,7 @@ export const ContainerRecent = ({setIsHome, setSelected}) => {
     const second = useChannels(10,13);
     return (
         <div className="ContainerRecent">
-            <h2>Buenos días</h2>
+            <h2>Good morning</h2>
             <div className="Cards">
                 {first.channels.map( channel => (
                 <HorizontalCard 
